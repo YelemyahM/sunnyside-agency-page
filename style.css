@@ -7,7 +7,8 @@ html {
   padding: 0;
   font-size: 18px;
   font-family: "Barlow", sans-serif;
-  color: hsl(213, 9%, 39%);
+  font-weight: 400;
+  color: #9f9ea5;
   line-height: 1.4;
 }
 .header {
@@ -62,7 +63,8 @@ html {
   border-radius: 30px;
   transition: all 0.3s;
 }
-.btn-contact:hover {
+.btn-contact:hover,
+.btn-contact:active {
   background: #6fcfff;
   color: #fff !important;
 }
@@ -75,7 +77,7 @@ html {
   display: flex;
 }
 div .square-text {
-  padding: 150px 120px 0 120px;
+  padding: 8em 8em 0 8em;
 }
 .transform div h2,
 .stand-out div h2 {
@@ -128,10 +130,6 @@ div .square-text {
   width: 100%;
   border-bottom: 4px solid red;
 }
-div .square-text {
-  padding: 3em 1em;
-  text-align: center;
-}
 div h3 {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -142,7 +140,6 @@ div h3 {
   display: flex;
   height: 38.888888888888886em;
   text-align: center;
-  position: relative;
 }
 .fruits .cherry {
   background-image: url(images/desktop/image-graphic-design.jpg);
@@ -168,6 +165,38 @@ div h3 {
 .fruits .clementine p {
   width: 55%;
   align-self: center;
+}
+.testimonials {
+  padding: 7em 5em;
+}
+.testimonials .testimonials-container {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials h3 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  margin-bottom: 4em;
+}
+.testimonials-container .persona {
+  text-align: center;
+  width: 32%;
+}
+.testimonials-container .persona img {
+  border-radius: 100%;
+}
+.testimonials-container .persona .persona-name {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  padding-top: 2em;
+}
+.testimonials-container .persona span {
+  display: block;
+}
+.testimonials-container .persona .persona-job {
+  color: #b3b3b3;
 }
 .attribution {
   font-size: 11px;
@@ -208,6 +237,13 @@ div h3 {
   .squares .transform {
     flex-direction: column-reverse;
   }
+  .squares .fruits {
+    height: auto;
+  }
+  div .square-text {
+    padding: 2em 1.5em 3em 1.5em;
+    text-align: center;
+  }
   div h3 {
     margin-top: 15em;
   }
@@ -230,5 +266,28 @@ div h3 {
   .fruits .cherry p,
   .fruits .clementine p {
     width: 100%;
+  }
+  .testimonials {
+    display: block;
+    padding: 2em 2em;
+    text-align: center;
+  }
+  .testimonials .testimonials-container {
+    display: block;
+  }
+  .testimonials h3 {
+    padding-bottom: 2em;
+  }
+  .testimonials-container .persona {
+    margin-bottom: 5em;
+    color: #7a7c7d;
+    line-height: 1.7;
+    width: 100%;
+  }
+  .testimonials-container .persona:last-child {
+    margin-bottom: 0;
+  }
+  .testimonials-container .persona .persona-name {
+    margin-top: 1.5em;
   }
 }
