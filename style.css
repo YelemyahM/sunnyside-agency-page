@@ -11,6 +11,9 @@ html {
   color: #9f9ea5;
   line-height: 1.4;
 }
+h2 {
+  font-size: 2rem;
+}
 .header {
   background-image: url(images/desktop/image-header.jpg);
   background-position: center;
@@ -77,7 +80,22 @@ html {
   display: flex;
 }
 div .square-text {
-  padding: 8em 8em 0 8em;
+  padding: 0 7em;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div .square-text a {
+  width: fit-content;
+}
+.transform .square-text,
+.stand-out .square-text {
+  width: 50%;
+}
+.transform img,
+.stand-out img {
+  width: 50%;
 }
 .transform div h2,
 .stand-out div h2 {
@@ -204,12 +222,13 @@ div h3 {
   width: 100%;
   display: inline-block;
   margin-bottom: 5px;
+  background: red;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .header {
     background-image: url(images/mobile/image-header.jpg);
     background-size: cover;
@@ -237,12 +256,24 @@ div h3 {
   .squares .transform {
     flex-direction: column-reverse;
   }
+  .transform .square-text,
+  .stand-out .square-text {
+    width: 100%;
+  }
+  .transform img,
+  .stand-out img {
+    width: 100%;
+  }
+  .transform div a, .stand-out div a {
+    align-self: center;
+  }
   .squares .fruits {
     height: auto;
   }
   div .square-text {
     padding: 2em 1.5em 3em 1.5em;
     text-align: center;
+    padding: 10%;
   }
   div h3 {
     margin-top: 15em;
@@ -289,5 +320,30 @@ div h3 {
   }
   .testimonials-container .persona .persona-name {
     margin-top: 1.5em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1245px) {
+  .transform img,
+  .stand-out img {
+    height: 100%;
+    outline: 4px dashed red;
+  }
+  .transform div h2,
+  .stand-out div h2 {
+    margin-bottom: 0.5em;
+  }
+  div .square-text * {
+    margin: 0;
+  }
+  div .square-text {
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div .square-text a {
+    width: fit-content;
+    margin-top: 1em;
   }
 }
