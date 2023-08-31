@@ -216,6 +216,16 @@ div h3 {
 .testimonials-container .persona .persona-job {
   color: #b3b3b3;
 }
+.mobile-img {
+  display: none;
+}
+.desktop-img {
+  display: flex;
+  width: 100%;
+}
+.desktop-img img {
+  width: 25%;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -300,7 +310,7 @@ div h3 {
   }
   .testimonials {
     display: block;
-    padding: 2em 2em;
+    padding: 2em 2em 4em 2em;
     text-align: center;
   }
   .testimonials .testimonials-container {
@@ -320,6 +330,21 @@ div h3 {
   }
   .testimonials-container .persona .persona-name {
     margin-top: 1.5em;
+  }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mobile-img .line {
+    width: 100%;
+    display: flex;
+  }
+  .mobile-img .line img {
+    width: 50%;
   }
 }
 
