@@ -327,7 +327,6 @@ div h3 {
   .transform img,
   .stand-out img {
     height: 100%;
-    outline: 4px dashed red;
   }
   .transform div h2,
   .stand-out div h2 {
