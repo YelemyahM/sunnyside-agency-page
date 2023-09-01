@@ -226,16 +226,56 @@ div h3 {
 .desktop-img img {
   width: 25%;
 }
+.footer {
+  background: #90d4c5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0 0 0;
+}
+.footer .main-footer {
+  width: 20%;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.footer a {
+  text-decoration: none;
+}
+.main-footer .socials {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+.main-footer .bottom-nav ul li a {
+  color: #2a7262;
+}
+.main-footer .bottom-nav ul li a:hover {
+  color: #fff;
+}
+.socials svg {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.socials svg path:hover {
+  fill: #fff;
+}
 .attribution {
   font-size: 11px;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 5px;
-  background: red;
+  color: black;
+  padding: 5em 0 1em 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
@@ -274,7 +314,8 @@ div h3 {
   .stand-out img {
     width: 100%;
   }
-  .transform div a, .stand-out div a {
+  .transform div a,
+  .stand-out div a {
     align-self: center;
   }
   .squares .fruits {
@@ -310,7 +351,7 @@ div h3 {
   }
   .testimonials {
     display: block;
-    padding: 2em 2em 4em 2em;
+    padding: 2em 5em 4em 5em;
     text-align: center;
   }
   .testimonials .testimonials-container {
@@ -345,6 +386,9 @@ div h3 {
   }
   .mobile-img .line img {
     width: 50%;
+  }
+  .footer .main-footer {
+    width: 70%;
   }
 }
 
