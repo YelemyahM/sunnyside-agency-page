@@ -48,13 +48,14 @@ h2 {
 .menu ul {
   display: flex;
   list-style: none;
-  width: 40vw;
-  justify-content: space-evenly;
+  width: 50%;
+  justify-content: space-between;
+  padding-inline-start: 0;
 }
 .menu ul li a {
   text-decoration: none;
   color: inherit;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .menu ul li a:not(.btn-contact):hover {
   text-decoration: underline;
@@ -395,6 +396,13 @@ div h3 {
     width: 70%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .menu ul {
+    width: 35%;
+  }
+}
+
 
 @media screen and (min-width: 769px) and (max-width: 1245px) {
   .transform img,
