@@ -397,9 +397,18 @@ div h3 {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .menu ul {
     width: 35%;
+  }
+  .footer .main-footer {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer .main-footer {
+    width: 26%;
   }
 }
 
